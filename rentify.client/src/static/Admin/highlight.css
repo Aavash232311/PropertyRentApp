@@ -1,0 +1,25 @@
+#filter-admin-highlight {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 150px 120px 80px;
+    grid-gap: 15px;
+    height: 80px;
+}
+.highlight-input-table {
+    width: 100%;
+    float: left;
+    height: 35px;
+    outline-width: 0;
+}
+#create-theme {
+    display: grid;
+    grid-template-columns: 150px 80px;
+    grid-gap: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #highlight-list {
+        width: 100%;
+    }
+}

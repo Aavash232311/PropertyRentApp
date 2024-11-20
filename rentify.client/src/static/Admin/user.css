@@ -1,0 +1,48 @@
+.user-create-fourm {
+    width: 80%;
+    margin-left: 10px;
+}
+
+.table-user-info {
+    width: 80%;
+}
+
+#user-info {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    height: auto;
+    position: absolute;
+    overflow: auto;
+    top: 0;
+}
+
+.user-search {
+    width: 100%;
+}
+.align-h-form {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 5px;
+}
+@media screen and (max-width: 800px) {
+    .table-user-info,
+    .user-create-fourm {
+        width: 100%;
+    }
+    .align-h-form {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .align-h-form {
+        display: block;
+    }
+    .user-search {
+        width: 98%;
+        margin-top: 10px;
+    }
+}

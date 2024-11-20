@@ -1,0 +1,13 @@
+#confirmation-modal {
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);
+}

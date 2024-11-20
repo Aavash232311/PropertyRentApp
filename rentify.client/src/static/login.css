@@ -1,0 +1,143 @@
+.login-frame {
+    height: 100vh;
+    width: 100vw;
+    top: 70px;
+    overflow: hidden;
+    margin-left: 0;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+#login-box {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    user-select: none;
+}
+
+#lgn-frame {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 500px;
+    height: 450px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 15px;
+    overflow: hidden;
+    user-select: none;
+}
+
+#signUp {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0;
+    width: 100%;
+}
+
+#signupimage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.norm-input {
+    border-radius: 5px;
+    background: rgb(249, 250, 250);
+    border: 1px solid rgb(181, 189, 196);
+    font-size: 16px;
+    height: 40px;
+    line-height: 24px;
+    padding: 7px 8px;
+    color: rgb(8, 9, 10);
+    box-shadow: none;
+    width: 90%;
+    margin-top: 20px;
+    :focus {
+        background-color: #fff;
+        border-color: #3b49df;
+        box-shadow: 1px 1px 0 #3b49df;
+    }
+}
+
+.signUpError {
+    width: 20%;
+    justify-content: left;
+    align-items: left;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    top: 8px
+}
+.a-align-lgn {
+    float: left;
+    margin-left: 25px;
+}
+
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+    #login-box {
+        z-index: 99999999;
+        width: 100%;
+    }
+    #signUp {
+        display: grid;
+        grid-template-columns: 0% 100%;
+        grid-gap: 0;
+        width: 100%;
+    }
+    .norm-input {
+        padding: 5px;
+        width: 100%;
+        margin: 5px;
+        margin-right: 5px;
+    }
+    .a-align-lgn {
+        margin-left: 5px;
+    }
+    #lgn-frame {
+        width: 100%;
+    }
+}

@@ -1,0 +1,267 @@
+﻿.main-page-headings {
+    width: 100%;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    user-select: none;
+    justify-content: center;
+    text-align: center;
+}
+
+#search-frame {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 200px;
+    height: 80px;
+    background-color: white;
+}
+
+#slider {
+    width: 500px;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hanger-home {
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    width: 100vw;
+    grid-gap: 8px;
+    overflow-y: auto;
+    display: none;
+}
+
+#highlight-list {
+    width: 50%;
+}
+
+.highlight-labels {
+    width: 100%;
+    height: 20px;
+}
+
+.blocks-high {
+    height: 300px;
+}
+
+.hanger-child {
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.cart-label-home {
+    width: 100%;
+    padding: 5px;
+    text-align: left;
+    font-weight: lighter;
+    float: left;
+    cursor: pointer;
+}
+
+#poster-image {
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar-frame {
+    width: 70%;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-app-input {
+    box-shadow: inset #abacaf 0 0 0 2px;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    appearance: none;
+    width: 100%;
+    position: relative;
+    border-radius: 3px;
+    padding: 9px 12px;
+    line-height: 1.4;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    transition: all .2s ease;
+
+    :hover {
+        box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px;
+    }
+
+    :focus {
+        background: #fff;
+        outline: 0;
+        box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+    }
+
+}
+
+.button-40 {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+}
+
+.button-40:hover {
+    background-color: #374151;
+}
+
+.button-40:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page-label {
+    width: 100%;
+    justify-content: left;
+    align-items: left;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+.cart-hanger {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 280px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    grid-gap: 10px;
+    padding: 15px;
+}
+
+.cart {
+    width: 100%;
+    height: 425px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.name-cart-label {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.location-cart-label {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.image-cart {
+    height: 250px;
+    padding: 5px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.cart-type {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.cart-label {
+    width: 100%;
+    font-weight: lighter;
+    padding: 5px;
+    text-align: left;
+}
+
+.cart-label-not-bold {
+    width: 100%;
+    font-weight: bold;
+    padding: 3px;
+    text-align: left;
+}
+
+#search-bar-frame-grid {
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 5px;
+    margin: 5px
+}
+@media (min-width: 768px) {
+    .button-40 {
+        padding: .75rem 1.5rem;
+    }
+    .search-app-input{
+        width: 100%;
+    }
+}
+
+.btn-search {
+    width: 100%;
+}
+.app-search-mobile-icon {
+    display: none;
+}
+@media screen and (max-width: 720px) {
+    #search-bar-frame {
+        width: 100%;
+    }
+    #search-bar-frame-grid {
+        height: 90px;
+    }
+    .btn-search {
+        font-weight: 12px;
+    }
+    .app-search-mobile-icon {
+        display: block;
+    }
+    .app-search-labels {
+        display: none;
+    }
+}

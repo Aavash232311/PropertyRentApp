@@ -1,0 +1,38 @@
+#profile-frame {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    user-select: none;
+}
+
+#profile-picture-frame {
+    height: 150px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 50%;
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 48px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#profile-picture-frame:hover {
+    font-size: 52px;
+}
+.mid-input {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 720px) {
+    .mid-input {
+        width: 100%;
+    }
+}

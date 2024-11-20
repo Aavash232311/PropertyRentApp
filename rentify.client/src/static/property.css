@@ -1,0 +1,114 @@
+.hidden {
+    visibility: hidden;
+}
+
+#table-header {
+    width: 100%;
+    height: 60px;
+    color: white;
+}
+
+.add-button {
+    float: right;
+}
+
+#add-property {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.add-p-form-g {
+    overflow-x: hidden;
+    padding: 5px;
+}
+
+#load-bar-half {
+    width: 50%;
+    height: 5px;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    animation-name: smoothload;
+    animation-duration: 1s;
+    z-index: 999999999;
+}
+
+#load-bar-full {
+    width: 100%;
+    height: 5px;
+    background-color: blue;
+    position: fixed;
+    top: 0;   
+    z-index: 999999999;
+}
+@keyframes smoothload {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+#add-prop-form-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 5px;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.form-labels {
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    font-weight: lighter;
+    user-select: none;
+}
+
+.o {
+    color: orange;
+    font-weight: bold;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    height: auto;
+}
+
+.conformation-button {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10px;
+}
+
+#image-div {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-gap: 5px;
+}
+
+.image-frame {
+    height: 80px;
+    width: 80px;
+    border: 1px dotted black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.hover-eff:hover {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 720px) {
+    #add-prop-form-grid {
+        display: block;
+    }
+}

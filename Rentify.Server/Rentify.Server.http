@@ -1,0 +1,6 @@
+@Rentify.Server_HostAddress = http://localhost:5290
+
+GET {{Rentify.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

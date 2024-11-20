@@ -1,0 +1,33 @@
+.content-label-admin {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding: 5px;
+    font-weight: lighter;
+    user-select: none;
+    border-bottom: 10px;
+}
+
+#add-category-of-state-admin {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 50%;
+    grid-gap: 5px;
+}
+
+#categoty-table{
+    width: 50%;
+}
+#theme-home-image-admin {
+    width: 50%;
+}
+.admin-form-essential {
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+@media screen and (max-width: 720px) {
+    #categoty-table, #theme-home-image-admin, .admin-form-essential, #add-category-of-state-admin {
+        width: 100%;
+    }
+}
