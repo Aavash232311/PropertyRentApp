@@ -54,7 +54,7 @@ namespace Rentify.Server.Controllers
                         if (!isImage) { return new JsonResult(BadRequest( new {errors = new List<object>() { new { MediaError = "unsupported media" } } } ));}
                         long imageSizeBytes = file.Length; // Size in bytes
                         double imageSizeMB = (double)imageSizeBytes / (1024 * 1024); // mb
-                        if (imageSizeMB >= 80) { return new JsonResult(BadRequest(new { errors = new List<object>() { new { SizeError = "Size should be less than 80 mega byte" } } })); }
+                        if (imageSizeMB > 3) { return new JsonResult(BadRequest(new { errors = new List<object>() { new { SizeError = "Size should be less than 3 mega byte" } } })); }
                         using (var stream = new FileStream(path, FileMode.Create))
                         {
                             await file.CopyToAsync(stream);
@@ -135,7 +135,7 @@ namespace Rentify.Server.Controllers
                         if (!isImage) { return new JsonResult(BadRequest(new { errors = new List<object>() { new { MediaError = "unsupported media" } } })); }
                         long imageSizeBytes = file.Length; // Size in bytes
                         double imageSizeMB = (double)imageSizeBytes / (1024 * 1024); // mb
-                        if (imageSizeMB >= 6) { return new JsonResult(BadRequest(new { errors = new List<object>() { new { SizeError = "Size should be less than 6 mega byte" } } })); }
+                        if (imageSizeMB > 3) { return new JsonResult(BadRequest(new { errors = new List<object>() { new { SizeError = "Size should be less than 3 mega byte" } } })); }
                         // if already exists then we need to delete it
                         var getValue = helper.GetAttr(newProperty, i.Name) as string; // existing value
                         // in producation, use env not getcurrdir
@@ -209,9 +209,9 @@ namespace Rentify.Server.Controllers
                 var isImage = contentType.StartsWith("image/");
                 if (!isImage) { return new JsonResult(BadRequest(new { errors = new List<object>() { new { MediaError = "unsupported media" } } })); }
                 // if user is updating his profile we should delete the old one
-                long imageSizeBytes = contentType.Length; // Size in bytes
+                long imageSizeBytes = UserInfo.Profile.Length; // Size in bytes
                 double imageSizeMB = (double)imageSizeBytes / (1024 * 1024); // mb
-                if (imageSizeMB >= 10) { return new JsonResult(BadRequest(new { errors = new List<object>() { new { SizeError = "Size should be less than 10 mega byte" } } })); }
+                if (imageSizeMB > 3) { return new JsonResult(BadRequest(new { errors = new List<object>() { new { SizeError = "Size should be less than 3 mega byte" } } })); }
                 string? path = user.Profile;
                 if (path != null || path != string.Empty)
                 {

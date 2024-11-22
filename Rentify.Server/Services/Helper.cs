@@ -15,7 +15,7 @@ namespace Rentify.Server.Services
     {
         Random random = new Random();
         private const double EarthRadiusKm = 6371.0;
-        public const string AppPassword = "cflyyiwwgrvvwlmt";
+        public const string AppPassword = "";
         private const string AppEmail = "aavash2005@gmail.com";
         public List<String> GenerateGps(double lat, double lon, double radiusKm)
         {

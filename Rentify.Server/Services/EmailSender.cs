@@ -17,7 +17,7 @@ public class EmailService : IEmailSender
         using (var client = new SmtpClient())
         {
             await client.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-            await client.AuthenticateAsync("aavash2005@gmail.com", "cflyyiwwgrvvwlmt");
+            await client.AuthenticateAsync("aavash2005@gmail.com", "");
             await client.SendAsync(emailMessage);
             await client.DisconnectAsync(true);
         }
