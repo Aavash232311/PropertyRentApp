@@ -11,5 +11,5 @@ role based api and page restriction
 reuseable react componenets
 working admin panel with basic functionality
 all basic bells and wistles many of them I dont even remember
-
+ thought of running a startup with it was not good, now its just a random text 
 
